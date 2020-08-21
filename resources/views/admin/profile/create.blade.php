@@ -29,7 +29,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">性別(gender)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="title" value="{{old('title')}}"</textarea>
+                            <textarea class="form-control" name="title" value="{{old('title')}}"></textarea>
                         </div>
                     </div>
                     <div class="form-group row">
