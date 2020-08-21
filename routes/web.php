@@ -15,9 +15,11 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'],function (){
      //dd("流ろにいる");
      Route::get('news/create', 'Admin\NewsController@add');
      Route::post('news/create', 'Admin\NewsController@create');
-     Route::get('profile/create','Admin\ProfileController@add')->middleware('auth');
+     Route::get('profile/create','Admin\ProfileController@add');
+     Route::post('profile/create','Admin\ProfileController@create');
      //Route::get('profile/create','Admin\ProfileController@add');
      Route::get('profile/edit','Admin\ProfileController@edit');
+     Route::post('profile/edit','Admin\ProfileController@update');
      //dd("流ろにいる");
 });  
    
