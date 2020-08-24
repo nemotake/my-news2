@@ -14,8 +14,8 @@ class ProfileController extends Controller
 
     public function create(Request $request)
     {
-        $this->validate($request, News::$rules);
-      $news = new News;
+        $this->validate($request, Profile::$rules);
+      $news = new Profile;
       $form = $request->all();
       if (isset($form['image'])) {
         $path = $request->file('image')->store('public/image');
